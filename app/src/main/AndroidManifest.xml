@@ -23,19 +23,23 @@
         <activity
             android:name=".WelcomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.Coffees"></activity>
+            android:theme="@style/Theme.Coffees" />
         <activity
             android:name=".NextActivity"
             android:exported="true"
-            android:theme="@style/Theme.Coffees"></activity>
+            android:theme="@style/Theme.Coffees" />
         <activity
             android:name=".AuthScreen"
             android:exported="true"
-            android:theme="@style/Theme.Coffees"></activity>
+            android:theme="@style/Theme.Coffees" />
         <activity
             android:name=".SignupActivity"
             android:exported="true"
-            android:theme="@style/Theme.Coffees"></activity>
+            android:theme="@style/Theme.Coffees" />
+        <activity
+            android:name=".SignIn"
+            android:exported="true"
+            android:theme="@style/Theme.Coffees" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

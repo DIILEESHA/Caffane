@@ -13,7 +13,7 @@ class AuthScreen : AppCompatActivity() {
 
         val btnSign = findViewById<Button>(R.id.btnSign)
         btnSign.setOnClickListener {
-            val intent = Intent(this, NextActivity::class.java)
+            val intent = Intent(this, SignIn::class.java)
             startActivity(intent)
             // Apply transition animations
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
