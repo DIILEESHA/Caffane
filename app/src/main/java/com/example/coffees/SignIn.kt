@@ -1,8 +1,8 @@
 package com.example.coffees
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -50,10 +50,14 @@ class SignIn : AppCompatActivity() {
         // If the fields are valid, show a success message
         Toast.makeText(this, "Sign In Successful!", Toast.LENGTH_SHORT).show()
 
-        // Here, you would typically check the credentials against your server or database
-        // For simplicity, we will assume the login is always successful
+        // Save login status in SharedPreferences
+        val sharedPref = getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
+        with(sharedPref.edit()) {
+            putBoolean("isLoggedIn", true)
+            apply()
+        }
 
-        // Optionally, you can navigate to the next activity after successful login
+        // Navigate to the MainActivity
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()  // Finish the current activity to prevent the user from coming back to the sign-in page

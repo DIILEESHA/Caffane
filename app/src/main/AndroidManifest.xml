@@ -44,6 +44,15 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Coffees" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Coffees" />
+
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Coffees" />
 
     </application>
 
